@@ -1,0 +1,3 @@
+describe('Article routes', function() {
+
+});
