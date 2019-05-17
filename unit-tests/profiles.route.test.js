@@ -1,3 +1,0 @@
-describe('Profiles routes', function() {
-
-});

@@ -1,3 +1,0 @@
-describe('Article routes', function() {
-
-});

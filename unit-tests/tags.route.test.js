@@ -1,3 +1,0 @@
-describe('Tags routes', function() {
-
-});
