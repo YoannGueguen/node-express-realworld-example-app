@@ -8,9 +8,13 @@
 
 ## Démarrage
 
-* Clone se repo
+* Cloner se repository
 * `npm install` pour télécharger les dépendances
 * Démarrer le serveur avec `npm run dev`
+
+## Dépendances
+
+- La version 3.2 de MongoDB est nécessaire pour faire fonctionner l'API
 
 ## Tests
 
