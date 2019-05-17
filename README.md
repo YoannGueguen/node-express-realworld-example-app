@@ -18,4 +18,6 @@
 
 ## Tests
 
+ATTENTION ! Il faut démarrer le serveur d'API avant d'executer les tests
+
 Pour les tests automatique de l'API via postman, merci d'executer les commande `npm run test`. Dans le cas des tests unitaires il faudra executer la commande `npm run unittest`

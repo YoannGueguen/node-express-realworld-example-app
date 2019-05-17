@@ -1,3 +1,7 @@
+var mongoose = require('mongoose');
+var router = require('express').Router();
+var User = mongoose.model('User');
+var auth = require('../routes/auth');
 var passport = require('passport');
 
 function userLogin(req, res, next) {
@@ -20,6 +24,7 @@ function userLogin(req, res, next) {
         return res.status(422).json(info);
       }
     })(req, res, next);
+
 }
 
 module.exports = {
