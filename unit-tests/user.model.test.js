@@ -19,5 +19,41 @@ describe('Users model should', function() {
 
         assert.strictEqual(exp, testExp);
     });
+
+    it ('username must be lowercase', function () {
+        const newUser = new User();
+        newUser.username = "TOTO";
+        expect(newUser.username).toBe("toto");
+    });
+
+    it ('email must be lowercase', function () {
+        const newUser = new User();
+        newUser.email = "TOTO@TaTa.cOm";
+        expect(newUser.email).toBe("toto@tata.com");
+    });
+
+    it ('username can\'t be blank', function () {
+        const newUser = new User();
+        newUser.username = ""
+        expect(newUser.validate().then).toThrow();
+    });
+
+    it ('email can\'t be blank', function () {
+        const newUser = new User();
+        newUser.email = ""
+        expect(newUser.validate().then).toThrow();
+    });
+
+    it ('throw error if username is invalid', function () {
+        const newUser = new User();
+        newUser.username = "@toto"
+        expect(newUser.validate().then).toThrow();
+    });
+
+    it ('throw error if email is invalid', function () {
+        const newUser = new User();
+        newUser.email = "toto.com"
+        expect(newUser.validate().then).toThrow();
+    });
     
 });
