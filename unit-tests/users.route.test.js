@@ -26,5 +26,5 @@ describe('Users routes should', function() {
         const resp = userCtrl.login(req , mockResponse, null);
         assert.strictEqual(resp.mystatus, 422);
     });
-
+    
 });
