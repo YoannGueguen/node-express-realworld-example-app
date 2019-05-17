@@ -20,15 +20,15 @@
 
 **ATTENTION ! Il faut démarrer le serveur d'API avant d'executer les tests**
 
-Pour les tests automatique de l'API via postman, merci d'executer les commandes `npm run test`. Dans le cas des tests unitaires il faudra executer la commande `npm run unittest`
+Pour les tests automatiques de l'API via postman, merci d'éxécuter la commande `npm run test`. Dans le cas des tests unitaires il faudra executer la commande `npm run unittest`
 
 ## Ce qui a été fait
 
 - Création d'un script 'beforeTest.sh' to drop database
-- Correction des tests d'intégrations (voir package.json script "npm run test")
+- Correction des tests d'intégration (voir package.json script "npm run test")
 - Mise en place de Jest pour les tests unitaires en NodeJS
 - Création de plusieurs mock (voir dossier '/unit-tests/mocks')
-- Création de plusieurs test unitaires :
+- Création de plusieurs tests unitaires :
     - Modèle 'Article'
       - slug is lowercase
       - slug must be unique
